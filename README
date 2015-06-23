@@ -1,0 +1,11 @@
+-------------------
+ libpowermate v1.0
+-------------------
+
+libpowermate is a tiny and simple LGPL C library to
+interface the Griffin Technology PowerMate USB device.
+Using it, you can easily find, configure and receive
+events from any PowerMate connected to your system.
+A command line utility to configure PowerMates, a
+test program, complete manuals and documentation
+are included too in this package.

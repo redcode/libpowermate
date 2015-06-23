@@ -1,0 +1,47 @@
+.TH "powermate" "3" "1.0" "Manuel Sainz de Baranda y Goñi" "libpowermate Programming Manual"
+.SH "NAME"
+search_powermate_devices, get_powermate_model, powermate_new, powermate_destroy, powermate_get_events, powermate_set_led,powermate_set_static_brightness, powermate_set_pulse_speed, powermate_set_pulse_table, powermate_set_pulse_asleep, powermate_set_pulse_awake, powermate_set_all
+\- Griffin PowerMate API
+.SH "SYNOPSIS"
+.nf 
+.B #include <powermate.h>
+.sp
+.BI "int search_powermate_devices(char *" directory ", char ***" found_devices );
+.sp
+.BI "const char* get_powermate_model(int " fd );
+.sp
+.BI "PowerMate* powermate_new(const char *" device ", PowerMateHandlers *" handlers );
+.sp
+.BI "int powermate_destroy(PowerMate *" pm );
+.sp
+.BI "int powermate_get_events(PowerMate *" pm );
+.sp
+.BI "int powermate_set_led(PowerMate * " pm ", PowerMateLED *" led );
+.sp
+.BI "int powermate_set_static_brightness(PowerMate *" pm ", unsigned char " brightness );
+.sp
+.BI "int powermate_set_pulse_speed(PowerMate *" pm ", unsigned short " speed );
+.sp
+.BI "int powermate_set_pulse_table(PowerMate *" pm ", unsigned char " table );
+.sp
+.BI "int powermate_set_pulse_asleep(PowerMate *" pm ", unsigned char " state );
+.sp
+.BI "int powermate_set_pulse_awake(PowerMate *" pm ", unsigned char " state );
+.sp
+.BI "int powermate_set_all(PowerMate *" pm ", unsigned char " static_brightness ", unsigned short " pulse_speed ", unsigned char " pulse_table ", unsigned char " pulse_asleep ", unsigned char " pulse_awake );
+.fi 
+.SH "DESCRIPTION"
+libpowermate functions provide a easy and quick way to handle and control Griffin Technology PowerMate device.
+.SH "SEE ALSO"
+.BR search_powermate_devices (3),
+.BR get_powermate_model (3),
+.BR powermate_new (3),
+.BR powermate_destroy (3),
+.BR powermate_get_events (3),
+.BR powermate_set_led (3),
+.BR powermate_set_static_brightness (3),
+.BR powermate_set_pulse_speed (3),
+.BR powermate_set_pulse_table (3),
+.BR powermate_set_pulse_asleep (3),
+.BR powermate_set_pulse_awake (3),
+.BR powermate_set_all (3)
